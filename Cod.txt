@@ -1,0 +1,76 @@
+#include <iostream>
+#include <fstream>
+#include <windows.h>
+
+using namespace std;
+
+ifstream in("date.in");
+ofstream out("date.out");
+
+int main()
+{int n,s,k,uc,a,b,c,d,e,f,g,h,i,j,ana;
+    a=b=c=d=e=f=g=h=i=j=ana=k=s=0;
+    in>>n;
+    ofstream cls("date.in");
+    out<<"";
+    out<<"Numarul citit:"<<n<<endl<<endl<<"Rezultate:"<<endl<<"========"<<endl<<endl;
+    cls<<"";
+    while(n>0)
+    {
+        uc=n%10;
+        ana=ana*10+uc;
+        if(uc==0)
+        {
+            a=a+1;
+        }
+        if(uc==1)
+        {
+            b=b+1;
+        }
+        if(uc==2)
+        {
+            c=c+1;
+        }
+        if(uc==3)
+        {
+            d=d+1;
+        }
+        if(uc==4)
+        {
+            e=e+1;
+        }
+        if(uc==5)
+        {
+            f=f+1;
+        }
+        if(uc==6)
+        {
+            g=g+1;
+        }
+        if(uc==7)
+        {
+            h=h+1;
+        }
+        if(uc==8)
+        {
+            i=i+1;
+        }
+        if(uc==9)
+        {
+            j=j+1;
+        }
+        k=k+1;
+        s=n%10+s;
+        n=n/10;
+    }
+    out<<"Suma cifrelor:"<<s<<endl<<"Numarul cifrelor:"<<k<<endl<<"Numarul scris invers:"<<ana<<endl<<"Numarul de cifre de 0:"<<a<<endl<<"Numarul de cifre de 1:"<<b<<endl<<"Numarul de cifre de 2:"<<c<<endl<<"Numarul de cifre de 3:"<<d<<endl<<"Numarul de cifre de 4:"<<e<<endl<<"Numarul de cifre de 5:"<<f<<endl<<"Numarul de cifre de 6:"<<g<<endl<<"Numarul de cifre de 7:"<<h<<endl<<"Numarul de cifre de 8:"<<i<<endl<<"Numarul de cifre de 9:"<<j;
+    cout<<"MS-D0S 7.01"<<endl<<endl;
+    cout<<"Reading files...";
+    Sleep(500);
+    cout<<endl<<"Processing..."<<endl;
+    Sleep(500);
+    cout<<"Finished!"<<endl<<"Writing data...";
+    Sleep(500);
+    cout<<endl<<endl;
+    return 0;
+}
